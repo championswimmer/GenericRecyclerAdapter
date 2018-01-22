@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class GenericRecyclerAdapter<T> extends RecyclerView.Adapter {
 
-    interface OnItemBindListener<I> {
+    public interface OnItemBindListener<I> {
         void onBind(View itemView, I item);
     }
 
@@ -55,7 +55,7 @@ public class GenericRecyclerAdapter<T> extends RecyclerView.Adapter {
 
     class GenericViewHolder extends RecyclerView.ViewHolder {
 
-        public GenericViewHolder(View itemView) {
+        GenericViewHolder(View itemView) {
             super(itemView);
         }
     }
