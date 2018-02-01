@@ -2,9 +2,14 @@ package `in`.championswimmer.genericrecycleradapter.sample
 
 import `in`.championswimmer.genericrecycleradapter.GenericRecyclerAdapter
 import `in`.championswimmer.genericrecycleradapter.sample.Post.Companion.genPosts
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.view.ContextMenu
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.activity_kotlin.*
 import kotlinx.android.synthetic.main.list_item_post.view.*
 
@@ -30,5 +35,20 @@ class KotlinActivity : AppCompatActivity() {
                     } } }
             )
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_activity_kotlin, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            R.id.menu_java -> {
+                startActivity(Intent(this, JavaActivity::class.java))
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

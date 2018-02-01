@@ -1,7 +1,6 @@
 package in.championswimmer.genericrecycleradapter;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +19,6 @@ public class GenericRecyclerAdapter<T> extends RecyclerView.Adapter {
     }
 
     private ArrayList<T> itemList;
-    @LayoutRes
     private int layoutId;
     private OnItemBindListener<T> onItemBindListener;
 

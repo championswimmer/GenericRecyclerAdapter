@@ -18,9 +18,11 @@ data class Post(
             for (i in 1..n) {
                 add(Post(
                         UUID.randomUUID().toString(),
-                        "${UUID.randomUUID().toString()} ${UUID.randomUUID().toString()} " +
-                                "${UUID.randomUUID().toString()} ${UUID.randomUUID().toString()} " +
-                                "${UUID.randomUUID().toString()} ${UUID.randomUUID().toString()} ",
+                        """
+                            ${UUID.randomUUID()} ${UUID.randomUUID()}
+                            ${UUID.randomUUID()} ${UUID.randomUUID()}
+                            ${UUID.randomUUID()} ${UUID.randomUUID()}
+                            """.trimIndent(),
                         Random().nextInt(100)
                 ))
             }
