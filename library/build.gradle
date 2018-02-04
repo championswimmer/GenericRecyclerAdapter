@@ -6,8 +6,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 11
-        versionName "0.1.1"
+        versionCode 12
+        versionName "0.1.2"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -27,7 +27,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-//    implementation "com.android.support:appcompat-v7:$support_version"
     implementation "com.android.support:recyclerview-v7:$support_version"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
