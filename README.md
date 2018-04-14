@@ -4,6 +4,8 @@
 
 ![banner](img/readme_banner.png)
 
+<a href='https://play.google.com/store/apps/details?id=in.championswimmer.genericrecycleradapter.sample&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
 ## Motivation
 
 Consuming a CRUD REST API and showing 20 different models in RecyclerViews ?
