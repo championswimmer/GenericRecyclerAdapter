@@ -25,6 +25,7 @@ public class JavaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java);
 
+
         rvPosts = findViewById(R.id.rvPosts);
         rvPosts.setLayoutManager(new LinearLayoutManager(this));
         rvPosts.setAdapter(new GenericRecyclerAdapter<Post>(
@@ -40,6 +41,8 @@ public class JavaActivity extends AppCompatActivity {
                     }
                 }
         ));
+
+        throw new RuntimeException("ERROR");
     }
 
     @Override
